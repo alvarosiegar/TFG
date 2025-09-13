@@ -6,7 +6,7 @@ TFG para el Grado en Economía en la Universidad Internacional de La Rioja (UNIR
 
 Autor: Álvaro Sierra García
 
-Directora: Beatriz Manotas HIdalgo
+Directora: Beatriz Manotas Hidalgo
 
 <br>
 
