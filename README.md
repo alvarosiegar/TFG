@@ -10,4 +10,7 @@ Directora: Beatriz Manotas HIdalgo
 
 <br>
 
-En este repositorio se encuentran todos los archivos relacionados con el desarrollo de código utilizados en el TFG.
+En este repositorio se encuentran todos los archivos relacionados con el desarrollo de código utilizados en el TFG:
+
+- Archivo R principal: `TFG_Alvaro_Sierra.R`
+- Imágenes resultantes de la ejecución del código e insertadas en el cuerpo del trabajo.
