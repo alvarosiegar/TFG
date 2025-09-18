@@ -150,7 +150,7 @@ resumen_global <- bind_rows(
 resumen_global
 
 
-## 3. LISA (Moran local) para lpibpc con queen
+## 4. LISA (Moran local) para lpibpc con queen
 y   <- dat_sp$lpibpc
 y_z <- as.numeric(scale(y))
 Wy  <- lag.listw(lw_queen, y_z, zero.policy = TRUE)
@@ -177,7 +177,7 @@ lisa_sp <- dat_sp %>%
   select(geo, NAME_LATN, geometry) %>%
   left_join(lisa_df %>% select(geo, y_z, Wy_z, Ii, Ii_p, clasificacion, significativo), by = "geo")
 
-## 4. Gráficos
+## 5. Gráficos
 p_scatter <- ggplot(lisa_df, aes(x = y_z, y = Wy_z)) +
   geom_hline(yintercept = 0) + geom_vline(xintercept = 0) +
   geom_point(alpha = 0.7) +
@@ -321,4 +321,5 @@ sar_r <- lagsarlm(lpibpc ~ tasa_paro + densidad, data = dat_sp,
 # Impactos puntuales (directo, indirecto, total) en cada esquema
 imp_q
 imp_r <- impacts(sar_r, listw = lw_rook,  R = 1000)
+
 imp_r
